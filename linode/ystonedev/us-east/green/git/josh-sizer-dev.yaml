@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: joshsizer-josh-sizer-dev
+  namespace: joshsizer-flux-root
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: joshsizer-josh-sizer-dev
+  url: ssh://git@github.com/joshsizer/josh.sizer.dev
