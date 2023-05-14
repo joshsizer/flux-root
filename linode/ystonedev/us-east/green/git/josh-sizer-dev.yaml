@@ -10,4 +10,5 @@ spec:
     branch: main
   secretRef:
     name: joshsizer-josh-sizer-dev
+    namespace: joshsizer-flux-root
   url: ssh://git@github.com/joshsizer/josh.sizer.dev
