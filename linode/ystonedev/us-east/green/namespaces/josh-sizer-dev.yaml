@@ -2,4 +2,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: joshsizer-josh-sizer-dev
+  name: josh-sizer-dev
