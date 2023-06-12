@@ -18,7 +18,7 @@ spec:
     ghostBlogTitle: "An AI Blog"
     ghostHost: &ghostHost "josh.sizer.dev"
     ghostPath: &ghostPath "/"
-    ghostEnableHttps: true
+    ghostEnableHttps: false
     service:
       # Default is a LoadBalancer, but I'm deferring to the ingress for that
       type: "ClusterIP"
