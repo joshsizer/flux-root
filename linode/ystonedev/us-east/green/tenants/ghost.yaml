@@ -30,3 +30,6 @@ spec:
       hostname: *ghostHost
       path: *ghostPath
       tls: true
+    mysql:
+      auth:
+        existingSecret: ghost-mysql
