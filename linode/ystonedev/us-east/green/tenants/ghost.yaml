@@ -15,10 +15,12 @@ spec:
   interval: 10m0s
   values:
     existingSecret: "ghost"
-    ghostBlogTitle: "An AI Blog"
+    ghostUsername: "joshsizer"
+    ghostEmail: "joshsizer@gmail.com"
+    ghostBlogTitle: "a (mostly) ai blog"
     ghostHost: &ghostHost "josh.sizer.dev"
     ghostPath: &ghostPath "/"
-    ghostEnableHttps: false
+    ghostEnableHttps: true
     service:
       # Default is a LoadBalancer, but I'm deferring to the ingress for that
       type: "ClusterIP"
