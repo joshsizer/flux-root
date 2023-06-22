@@ -13,3 +13,8 @@ spec:
         name: josh-sizer-dev
         namespace: joshsizer-flux-root
   interval: 10m0s
+  values:
+    image:
+      tag: latest
+    service:
+      port: 3000
