@@ -4,7 +4,7 @@ metadata:
   name: blogposts-generator
   namespace: josh-sizer-dev
 spec:
-  schedule: "36 20 * * *"
+  schedule: "0 20 * * *" # 8:00 pm EST
   timeZone: "America/New_York"
   jobTemplate:
     spec:
@@ -19,4 +19,4 @@ spec:
                 name: blogposts-generator
             - configMapRef:
                 name: blogposts-generator
-          restartPolicy: OnFailure
+          restartPolicy: Never
