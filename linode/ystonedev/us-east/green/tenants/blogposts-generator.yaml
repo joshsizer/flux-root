@@ -4,7 +4,7 @@ metadata:
   name: blogposts-generator
   namespace: josh-sizer-dev
 spec:
-  schedule: "30 8 * * *"
+  schedule: "32 20 * * *"
   timeZone: "America/New_York"
   jobTemplate:
     spec:
