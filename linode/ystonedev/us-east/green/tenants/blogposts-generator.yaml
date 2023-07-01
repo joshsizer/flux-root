@@ -5,6 +5,7 @@ metadata:
   namespace: josh-sizer-dev
 spec:
   schedule: "30 8 * * *"
+  timeZone: "America/New_York"
   jobTemplate:
     spec:
       template:
@@ -13,9 +14,10 @@ spec:
           - name: blogposts-generator
             image: joshsizer/blogposts-generator:latest
             imagePullPolicy: IfNotPresent
+            envFrom:
+            - secretRef:
+                name: blogposts-generator
+            - configMapRef:
+                name: blogposts-generator
+
           restartPolicy: OnFailure
-          envFrom:
-          - secretRef:
-              name: blogposts-generator
-          - configMapRef:
-              name: blogposts-generator
