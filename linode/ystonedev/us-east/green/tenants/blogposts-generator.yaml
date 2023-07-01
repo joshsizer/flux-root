@@ -4,7 +4,7 @@ metadata:
   name: blogposts-generator
   namespace: josh-sizer-dev
 spec:
-  schedule: "* * * * *"
+  schedule: "30 8 * * *"
   jobTemplate:
     spec:
       template:
