@@ -4,7 +4,7 @@ metadata:
   name: blogposts-generator
   namespace: josh-sizer-dev
 spec:
-  schedule: "0 20 * * *" # 8:00 pm EST
+  schedule: "0 20 * * 2" # 8:00 pm EST every Tuesday
   timeZone: "America/New_York"
   jobTemplate:
     spec:
