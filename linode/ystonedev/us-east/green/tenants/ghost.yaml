@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: ghost
-      version: '18.*.*'
+      version: '19.11.5'
       sourceRef:
         kind: HelmRepository
         name: bitnami
