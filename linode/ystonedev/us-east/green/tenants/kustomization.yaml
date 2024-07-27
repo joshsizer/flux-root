@@ -4,4 +4,3 @@ kind: Kustomization
 resources:
 - blogposts-generator.yaml
 - ghost.yaml
-- josh-sizer-dev.yaml
