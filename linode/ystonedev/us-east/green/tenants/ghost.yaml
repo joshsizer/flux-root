@@ -35,7 +35,7 @@ spec:
         cert-manager.io/cluster-issuer: letsencrypt-production
       pathType: Prefix
       hostname: *ghostHost
-      path: /ghost
+      path: /ai-blog/
       tls: true
     mysql:
       primary:
