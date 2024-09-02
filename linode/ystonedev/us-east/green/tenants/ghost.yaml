@@ -23,7 +23,7 @@ spec:
     ghostEmail: "joshsizer@gmail.com"
     ghostBlogTitle: "a (mostly) ai blog"
     ghostHost: &ghostHost "josh.sizer.dev"
-    ghostPath: &ghostPath "/ai-blog/"
+    ghostPath: &ghostPath "/"
     ghostEnableHttps: true
     service:
       # Default is a LoadBalancer, but I'm deferring to the ingress for that
