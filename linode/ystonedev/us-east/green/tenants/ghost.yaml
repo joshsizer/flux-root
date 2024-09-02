@@ -23,7 +23,7 @@ spec:
     ghostEmail: "joshsizer@gmail.com"
     ghostBlogTitle: "a (mostly) ai blog"
     ghostHost: &ghostHost "josh.sizer.dev"
-    ghostPath: "/ai-blog/"
+    ghostPath: &ghostPath "/"
     ghostEnableHttps: true
     service:
       # Default is a LoadBalancer, but I'm deferring to the ingress for that
@@ -35,7 +35,7 @@ spec:
         cert-manager.io/cluster-issuer: letsencrypt-production
       pathType: Prefix
       hostname: *ghostHost
-      path: /ai-blog/
+      path: *ghostPath
       tls: true
     mysql:
       primary:
