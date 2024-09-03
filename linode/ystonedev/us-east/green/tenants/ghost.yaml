@@ -33,9 +33,11 @@ spec:
       ingressClassName: nginx
       annotations: 
         cert-manager.io/cluster-issuer: letsencrypt-production
-      pathType: Prefix
+        nginx.ingress.kubernetes.io/use-regex: "true"
+        nginx.ingress.kubernetes.io/rewrite-target: /$2
+      pathType: ImplementationSpecific
       hostname: *ghostHost
-      path: *ghostPath
+      path: /ai-blog(/|$)(.*)
       tls: true
     mysql:
       primary:
