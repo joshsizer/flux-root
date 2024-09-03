@@ -39,11 +39,9 @@ spec:
       tls: true
     mysql:
       primary:
-        extraFlags: "--mysql-native-password=ON"
         resources:
           requests:
             cpu: 100m
             memory: 128Mi
       auth:
         existingSecret: ghost-mysql
-        authenticationPolicy: "sha256_password ,,"
