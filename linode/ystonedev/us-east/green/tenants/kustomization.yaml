@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 - blogposts-generator.yaml
 - ghost.yaml
+- nignx.yaml
