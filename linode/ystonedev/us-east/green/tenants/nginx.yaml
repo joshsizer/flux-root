@@ -18,8 +18,8 @@ spec:
     serverBlock: |
       server {
         listen 0.0.0.0:8080;
-        location /obsidian {
-          proxy_pass https://publish.obsidian.md/serve?url=josh.sizer.dev/obsidian/;
+        location / {
+          proxy_pass https://publish.obsidian.md/serve?url=josh.sizer.dev/;
           proxy_ssl_server_name on;
           proxy_set_header Host publish.obsidian.md;
         }
@@ -31,5 +31,5 @@ spec:
         cert-manager.io/cluster-issuer: letsencrypt-production
       pathType: Prefix
       hostname: josh.sizer.dev
-      path: /obsidian
+      path: /
       tls: true
