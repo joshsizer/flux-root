@@ -25,6 +25,15 @@ spec:
     ghostHost: &ghostHost "josh.sizer.dev"
     ghostPath: &ghostPath "/ai-blog"
     ghostEnableHttps: true
+    customReadinessProbe:                                                                                                                  
+      failureThreshold: 6                                                                                                            
+      httpGet:                                                                                                                       
+        httpHeaders:                                                                                                                 
+        - name: x-forwarded-proto                                                                                                    
+          value: https                                                                                                               
+        path: /ai-blog                                                                                                                     
+        port: https                                                                                                                  
+        scheme: HTTP
     image:
       repository: joshsizer/ghost
       tag: 5.93.0-debian-12-r0
