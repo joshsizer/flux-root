@@ -33,3 +33,6 @@ spec:
       hostname: josh.sizer.dev
       path: /
       tls: true
+    service:
+      # Default is a LoadBalancer, but I'm deferring to the ingress for that
+      type: "ClusterIP"
